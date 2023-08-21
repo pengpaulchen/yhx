@@ -1,0 +1,76 @@
+/* styles.css */
+.para{
+    padding: 20px;
+}
+.card {
+    height: 100%; /* 或者具体的像素值，例如 height: 300px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    margin-right: 10px;
+}
+.logo {
+    width: 80px; /* 调整商标图片的宽度 */
+    margin-right: 10px; /* 调整商标图片与文字之间的间距 */
+}
+.image-background {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .image-background img {
+    width: 100%;
+    height: auto;
+  }
+.image-scroller {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    animation: scrollImages 40s linear infinite;
+}
+
+.image-container img {
+    max-height: 100%;
+    margin: 0;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* custom-styles.css */
+
+.outer-container {
+    position: relative; /* Add relative positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #e8f7e2;
+    padding: 10px;
+}
+
+.title-container {
+    text-align: center;
+    background-color:#e8f7e2;
+    padding: 10px;
+}
+.card-img-top{
+    width: 80%; /* 图片宽度为卡片的100% */
+    height: auto; /* 自动保持宽高比 */
+    object-fit: cover; /* 图片保持比例，填满容器 */
+}
